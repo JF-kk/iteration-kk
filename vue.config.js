@@ -1,6 +1,8 @@
 const port = 8080;
 const url = 'http://127.0.0.1:8080';
 // const url = '';
+
+
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'? '/production-sub-path/': '/',    // 部署应用包时的基本 URL。
   // outputDir: 'dist',       // 生产环境构建文件的目录，默认是 dist
@@ -16,5 +18,5 @@ module.exports = {
         changeOrigin: true    // 设置跨域
       },
     }
-  }
+  },
 }
